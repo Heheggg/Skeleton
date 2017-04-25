@@ -53,7 +53,11 @@ def parse_file( fname, edges, transform, screen, color ):
     lines = f.readlines()
 
     stack = []
-    
+    stack[-1] = t
+    stack.append([[0,0,0,0],
+                  [0,0,0,0],
+                  [0,0,0,0],
+                  [0,0,0,0]])
     
     step = 0.05
     c = 0
